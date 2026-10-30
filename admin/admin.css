@@ -1,0 +1,24 @@
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#f2f5f9;color:#111827}
+.app{display:flex;min-height:100vh}
+.lado{width:230px;background:#111827;color:#fff;padding:18px;display:flex;flex-direction:column;gap:4px;flex-shrink:0}
+.lado h2{margin:0;color:#38bdf8}.lado small{color:#9ca3af;margin-bottom:12px}
+.lado a{color:#d1d5db;text-decoration:none;padding:8px 10px;border-radius:6px}.lado a:hover{background:#1f2937;color:#fff}
+main{flex:1;padding:24px;min-width:0}h1{margin-top:0}h2{font-size:17px}
+table{width:100%;border-collapse:collapse;background:#fff;font-size:14px;border-radius:8px;overflow:hidden}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid #e5e7eb;vertical-align:top}th{background:#eef2f7}
+.caja{background:#fff;border-radius:10px;padding:16px;margin-bottom:16px;box-shadow:0 1px 6px #0001}
+input,select,textarea,button{font:inherit;padding:7px 9px;border:1px solid #cbd5e1;border-radius:6px}
+button{background:#1b6ec2;color:#fff;border:0;cursor:pointer}button.rojo{background:#b91c1c}button.gris{background:#64748b}
+form.mini{display:inline-block;margin:2px}
+.fila{display:flex;flex-wrap:wrap;gap:8px;align-items:flex-end;margin-bottom:8px}.fila label{display:flex;flex-direction:column;font-size:13px;gap:3px}
+.ok{background:#dff5e1;color:#15691f;padding:9px;border-radius:6px;margin-bottom:10px}
+.error{background:#fde2e2;color:#a40000;padding:9px;border-radius:6px;margin-bottom:10px}
+.badge{padding:2px 9px;border-radius:10px;font-size:12px;background:#e8f0fb;color:#1b6ec2}
+.e-pendiente{background:#fef3c7;color:#92400e}.e-realizada{background:#dff5e1;color:#15691f}
+.e-cancelada{background:#fde2e2;color:#a40000}.e-pospuesta{background:#ede9fe;color:#5b21b6}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px;margin-bottom:18px}
+.cards>*{background:#fff;border-radius:10px;padding:16px;box-shadow:0 1px 6px #0001;text-decoration:none;color:inherit}
+.cards b{display:block;font-size:28px;color:#1b6ec2}
+.fotos{display:flex;gap:8px;flex-wrap:wrap}.fotos img{height:90px;border-radius:6px}
+.scroll{overflow-x:auto}details summary{cursor:pointer;color:#1b6ec2}
+@media(max-width:700px){.app{flex-direction:column}.lado{width:100%;flex-direction:row;flex-wrap:wrap}}

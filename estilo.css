@@ -1,0 +1,58 @@
+body{font-family:Arial,sans-serif;background:#f2f5f9;display:flex;justify-content:center;padding:40px}
+.caja{background:#fff;padding:28px;border-radius:10px;width:360px;box-shadow:0 2px 10px #0002}
+h1{margin-top:0;font-size:22px}
+label{display:block;margin-top:12px;font-size:14px}
+input,select{width:100%;padding:8px;margin-top:4px;box-sizing:border-box}
+button{margin-top:18px;width:100%;padding:10px;background:#1b6ec2;color:#fff;border:0;border-radius:6px;cursor:pointer}
+.error{background:#fde2e2;color:#a40000;padding:8px;border-radius:6px;margin-bottom:8px}
+.ok{background:#dff5e1;color:#15691f;padding:8px;border-radius:6px;margin-bottom:8px}
+p.pie{font-size:14px;text-align:center}
+.pagina{display:flex;gap:24px;align-items:flex-start;flex-wrap:wrap;justify-content:center}
+.caja.ancha{width:760px;max-width:100%}
+h2{font-size:16px;margin:18px 0 6px}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th,td{text-align:left;padding:7px;border-bottom:1px solid #e1e5ea}
+th{background:#f2f5f9}
+.estado{background:#e8f0fb;color:#1b6ec2;padding:2px 8px;border-radius:10px;font-size:12px}
+.col{display:flex;flex-direction:column;gap:20px;width:760px;max-width:100%}
+.col .caja.ancha{width:100%}
+.banner{background:#e8f0fb;border-left:5px solid #1b6ec2;border-radius:10px;padding:16px 20px;line-height:1.5}
+.banner.sin{background:#fff;border-left-color:#cbd5e1}
+.banner h2{margin:0 0 4px;font-size:15px}
+.banner .grande{font-size:22px;font-weight:bold;color:#1b6ec2}
+.resumen{display:flex;gap:12px}
+.dato{flex:1;background:#fff;border-radius:10px;padding:14px;text-align:center;font-size:13px;box-shadow:0 2px 10px #0002}
+.dato b{display:block;font-size:26px;color:#1b6ec2}
+.scroll{overflow-x:auto}
+.vacio{color:#6b7280}
+details.paciente{border:1px solid #e1e5ea;border-radius:8px;margin-bottom:8px;padding:10px 12px}
+details.paciente summary{cursor:pointer}
+details.paciente small{display:block;color:#6b7280;margin-top:2px}
+.e-pendiente{background:#fef3c7;color:#92400e}
+.e-confirmada{background:#e8f0fb;color:#1b6ec2}
+.e-realizada{background:#dff5e1;color:#15691f}
+.e-cancelada{background:#fde2e2;color:#a40000}
+.caja.media{width:520px;max-width:100%}
+.opcion{display:flex;align-items:center;gap:10px;border:1px solid #e1e5ea;border-radius:8px;padding:10px 12px;cursor:pointer}
+.opcion input{width:auto;margin:0}
+.opcion small{display:block;color:#6b7280}
+.opcion:has(input:checked){border-color:#1b6ec2;background:#e8f0fb}
+.rol{display:inline-block;background:#e8f0fb;color:#1b6ec2;font-weight:bold;padding:4px 14px;border-radius:12px}
+a.btn{display:block;text-align:center;text-decoration:none;background:#1b6ec2;color:#fff;padding:10px;border-radius:6px;margin-top:14px}
+button.chico{margin:0;padding:5px 12px;width:auto;font-size:13px}
+button.rojo{background:#b91c1c}
+details.accion summary{cursor:pointer;color:#1b6ec2;font-size:13px}
+details.accion form{display:flex;flex-direction:column;gap:4px;margin-top:6px;min-width:130px}
+details.accion input{margin:0;padding:5px}
+.e-pospuesta{background:#ede9fe;color:#5b21b6}
+/* Menú lateral del personal también en "Mi perfil" */
+.con-menu{display:flex}
+body.staff{display:block;padding:0}
+body.staff .con-menu{min-height:100vh}
+body.staff .pagina{flex:1;min-width:0;padding:40px}
+.lado-panel{width:230px;flex-shrink:0;background:#111827;color:#fff;padding:18px;display:flex;flex-direction:column;gap:4px}
+.lado-panel h2{margin:0;color:#38bdf8;font-size:20px}
+.lado-panel small{color:#9ca3af;margin-bottom:12px}
+.lado-panel a{color:#d1d5db;text-decoration:none;padding:8px 10px;border-radius:6px}
+.lado-panel a:hover,.lado-panel a.activo{background:#1f2937;color:#fff}
+@media(max-width:700px){body.staff .con-menu{flex-direction:column}.lado-panel{width:100%;flex-direction:row;flex-wrap:wrap}}
